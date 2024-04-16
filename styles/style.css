@@ -60,8 +60,10 @@ p {
   border-radius: 10px;
   background-color: hsl(330, 100%, 98%);
 }
-.intro .intro_tips h3 {
+.intro .intro_tips h2 {
   color: hsl(332, 51%, 32%);
+  font-size: 0.95em;
+  font-weight: 600;
 }
 .intro .intro_tips p {
   line-height: 1.2rem;
@@ -112,7 +114,6 @@ a {
 
 @media screen and (max-width: 380px) {
   p {
-    font-size: clamp(14px, 2vw, 16px);
     line-height: 1.5em;
   }
   h1 {

@@ -70,8 +70,10 @@ p {
         border-radius: 10px;
         background-color: $clr-bckgr-par;
 
-        h3 {
+        h2 {
             color: $clr-ter-h;
+            font-size: .95em;
+            font-weight: $fw-semibold;
         }
         
         p {
@@ -131,7 +133,7 @@ a {
 
 @media screen and (max-width:380px) {
     p {
-        font-size: $fs-regular;
+        // font-size: $fs-regular;
         line-height: 1.5em;
     }
 
