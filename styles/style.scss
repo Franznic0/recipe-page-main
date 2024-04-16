@@ -1,0 +1,153 @@
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: $clr-bckgr-primary;
+    font-family: $ff-primary;
+    font-size: $fs-regular;
+    font-weight: $fw-normal;
+    color: $clr-font;
+}
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+.container {
+    @include flexCenter();
+    
+    width: min(100%, 600px); 
+    margin-top: 6rem;
+    margin-inline: auto;
+    padding: 2rem;
+
+    border-radius: 15px;
+
+    background-color: $clr-bckgr-secondary;
+
+}
+
+li {
+    margin-left: 1.3em;
+    padding-left: 1em;
+    margin-top: .7rem;
+}
+
+p {
+    font-size: .85rem;
+
+}
+
+
+.intro {
+    @include flexCenter();
+    
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-family: $ff-secondary;
+        font-weight: $fw-normal;
+        color: $clr-primary-h;
+    }
+    
+    .intro_tips {
+        padding: 1rem;
+        
+        border-radius: 10px;
+        background-color: $clr-bckgr-par;
+
+        h3 {
+            color: $clr-ter-h;
+        }
+        
+        p {
+            line-height: 1.2rem;
+        }
+    }
+}
+
+.recipe {
+    li::marker {
+        color: $clr-secondary-h;
+        font-weight: $fw-bold;
+        font-size: .85rem;
+    }
+}
+
+.ingredients, .instruction {
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid $clr-line;
+}
+
+h2 {
+    font-weight: $fw-normal;
+    font-family: $ff-secondary;
+    color: $clr-secondary-h;
+}
+
+.nutrition {
+    p {
+        margin: 1rem auto;
+    }
+
+    .nutrition_values {
+        width: 100%;
+        font-size: .85rem;
+        
+        td {
+            padding: 1em;
+            border-bottom: 1px solid $clr-line;
+        }
+        
+        b {
+            color: $clr-secondary-h;
+        }
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    margin: 2rem;
+}
+
+a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+
+@media screen and (max-width:380px) {
+    p {
+        font-size: $fs-regular;
+        line-height: 1.5em;
+    }
+
+    h1 {
+        line-height: 1em;
+    }
+
+    .container {
+        border-radius: 0px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .intro img {
+        width: calc(100% + 4rem);
+        border-radius: 0px;
+        margin-left: -2rem;
+        margin-bottom: 1.5rem;
+    }
+} 
