@@ -57,7 +57,8 @@ p {
         border-radius: 10px;
     }
     
-    h1 {
+    .title {
+        font-size: 2em;
         font-family: $ff-secondary;
         font-weight: $fw-normal;
         color: $clr-primary-h;

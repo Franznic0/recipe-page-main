@@ -9,7 +9,7 @@ $clr-ter-h: hsl(332, 51%, 32%);
 $clr-font: hsl(30, 10%, 34%);
 $clr-line: hsl(30, 18%, 87%);
 
-$fs-regular: 16px;
+$fs-regular: clamp(14px, 2vw, 16px);
 
 $ff-primary: 'Outfit', sans-serif;
 $ff-secondary: 'Young Serif', serif;
